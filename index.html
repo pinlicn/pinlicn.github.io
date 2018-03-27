@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>重庆品立科技有限公司官方首页</title>
+    <meta charset="UTF-8">
+    <title>三列-左右固定—中间自适应</title>
+    <style>
+        .left {
+            width: 200px;
+            height: 600px;
+            background-color: cyan;
+            float: left;
+        }
+
+        .right {
+            width: 200px;
+            height: 600px;
+            background-color: cyan;
+            float: right;
+        }
+
+        .main {
+            height: 600px;
+            margin-left: 200px;
+            margin-right: 200px;
+            background-color: #fd8008;
+        }
+    </style>
 </head>
 <body>
-	<p>欢迎光临重庆品立科技有限公司官方首页</p>
+<!--基本思路：-->
+<!--1.和两列布局相似-->
+<!--2.左右两列采用浮动+宽度-->
+<!--3.中间区域实际上是用margin挤出来-->
+<!--4.Dom顺序不能乱，必须卸载左右两侧，在写中间-->
+<div class="left">左侧</div>
+<div class="right">右侧</div>
+<div class="main">主体</div>
 </body>
 </html>
